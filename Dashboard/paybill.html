@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client Bill</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+		}
+
+		form {
+			margin-top: 20px;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 346px;
+			margin: 0 auto;
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			font-weight: normal;
+		}
+
+		input[type="text"] {
+			padding: 6px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			width: 100%;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 8px 16px;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="addbill.php">
+		<table>
+			<tr>
+				<input type="hidden" name="owners_id" value="<?php echo $id; ?>" />
+				<input type="hidden" name="date" value="<?php echo $date; ?>" />
+				<th>Previous Reading:</th>
+				<td><input type="text" name="prev" value="<?php echo $previous; ?>" /></td>
+				<td>ml</td>
+			</tr>
+			<tr>
+				<th>Present Reading:</th>
+				<td><input type="text" name="pres" /></td>
+				<td>ml</td>
+			</tr>
+			<tr>
+				<th>Price/ml:</th>
+				<td><input type="text" name="price" value="10" /></td>
+				<td>Tshs</td>
+			</tr>
+			<tr>
+				<td colspan="3"><input type="submit" name="total" value="Add" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.nav-links li a:hover {
+    background-color: #0058ca;
+}
+
+.panel-title {
+    padding: 2%;
+    text-align: center;
+}
+
+h1 {
+    font: 150px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+}
+
+th {
+    background-color: #008ae7;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #5cb85c;
+    transition: ease 0.3s;
+}
+
+.btn:hover {
+    background-color: #64ce64;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    transition: ease 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #ef6560;
+}
+
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 13px;
+    height: 15px;
+}
