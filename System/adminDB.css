@@ -1,0 +1,43 @@
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.panel li {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    font-size: 30px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    padding: 7px 10px 1px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.panel li span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.panel li .label {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+footer {
+    justify-content: baseline;
+    background: #000;
+    color: #fff;
+    padding: 35px;
+    text-align: center;
+}

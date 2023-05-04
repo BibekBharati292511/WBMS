@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Water Billing System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* CSS styles go here */
+		body {
+            background: url(https://innertouchdigital.com/wp-content/uploads/2018/10/iStock-852187968.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 50% 50%;
+            background-size: cover;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		h1 {
+			font-size: 52px;
+			color: #333;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		p {
+			font-size: 20px;
+			color: #565656;
+			line-height: 1.5;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		.button {
+			display: inline-block;
+			padding: 12px 20px;
+			background-color: #008ae7;
+			color: #fff;
+			font-size: 16px;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: background-color 0.2s ease-in-out;
+			margin-top: 30px;
+		}
+		.button:hover {
+			background-color: #0058ca;
+		}
+		.image {
+			margin-top: 50px;
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			object-fit: cover;
+            opacity: 0.8;
+		}
+		.features {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+			margin-top: 50px;
+		}
+		.feature {
+			flex-basis: 300px;
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid #000000;
+			border-radius: 5px;
+			text-align: center;
+            /* background: #f3f3f3; */
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+		}
+		.feature h2 {
+			font-size: 24px;
+			color: #333;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		.feature p {
+			font-size: 16px;
+			color: #000000;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		@media screen and (max-width: 768px) {
+			.container {
+				padding: 10px;
+			}
+			h1 {
+				font-size: 36px;
+			}
+			p {
+				font-size: 16px;
+			}
+			.feature {
+				flex-basis: 200px;
+				margin: 10px;
+				padding: 10px;
+				font-size: 14px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Water Billing System</h1>
+		<p>Manage your water bills and usage with ease.</p>
+		<a href="userLogin.html" class="button">Get Started</a>
+		<img src="Images/loginImg.png" alt="Water meter" class="image">
+		<div class="features">
+			<div class="feature">
+				<h2>Easy Bill Payment</h2>			
+                <p>Pay your water bills online using a variety of payment methods. Our system is secure and easy to use, making bill payments hassle-free.</p>
+            </div>
+            <div class="feature">
+                <h2>Usage Tracking</h2>
+                <p>Keep track of your water usage over time with our usage tracking feature. See how much water you've used and when, so you can make informed decisions about your usage.</p>
+            </div>
+            <div class="feature">
+                <h2>24/7 Access</h2>
+                <p>Access your water billing information and usage data anytime, anywhere. Our system is available 24/7, so you can manage your water usage on your own schedule.</p>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="adminBilling.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Billing</title>
+</head>
+
+<body>
+    <nav>
+        <div class="header">
+            <div class="logo-container">
+                <img src="Images/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="title">Water Billing System</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="adminDB.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="adminBilling.html"><i class="fas fa-file-invoice-dollar"></i> Billing</a></li>
+            <li><a href="#"><i class="fas fa-user-cog"></i> Admin</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> Clients</a></li>
+            <li><a href="userLogin.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <h1>Billing Sequence</h1>
+                </div>
+            </div>
+            <div class="panel-body">
+                <table class="table" bgcolor="#008ae7">
+                    <tr>
+                        <th>Id</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Meter Code</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>M</td>
+                        <td>123 Main St</td>
+                        <td>555-1234</td>
+                        <td>
+                            <button id="issue" style="border: none;">
+                                <span class="btn btn-info btn-xs">
+                                  <i class="fas fa-dollar-sign"></i> Issue
+                                </span>
+                              </button>
+                              <button id="view" style="border: none;">
+                                <span class="btn btn-danger btn-xs">
+                                  <i class="far fa-eye"></i> View
+                                </span>
+                              </button>                              
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
